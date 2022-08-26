@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  font-family: arial;
+}
+
+body{
+  background-color: darkmagenta;
+}
+
+#header-nav {
+  background: lightgreen;
+  border: 2px solid black;
+  border-radius: 0px;
+}
+
+#collapsable-nav {
+  /*background-color: whitesmoke;*/
+  /*padding: 0;*/
+  margin-top: 3px;
+}
+
+#nav-list{
+  text-align: center;
+  background: wheat;
+  margin: 0px -15px;
+}
+
+#nav-list > li {
+  border-top: 2px solid black;
+}
+
+#main-content > h2 {
+  margin-bottom: 5%;
+}
+
+.card {
+  border: 3px solid black;
+  height: 1000px;
+  margin-bottom: 25px;
+  background-color: lightgray;
+}
+
+.paraTitle {
+  text-align: center;
+  font-size: medium;
+  font-weight: bold;
+  margin-top: 5px;
+  font-weight: 800;
+}
+
+.section {
+  font-size: small;
+  overflow: hidden;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-weight: 600;
+}
