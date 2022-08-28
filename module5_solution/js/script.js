@@ -27,7 +27,7 @@ var menuItemHtml = "snippets/menu-item.html";
 var insertHtml = function (selector, html) {
   var targetElem = document.querySelector(selector);
   targetElem.innerHTML = html;
-  console.log(`Parshu 6 ${selector} ${html} ${targetElem.innerHTML}`);
+  console.log(`Parshu 6 ${selector} ${html} ${JSON.stringify(targetElem.innerHTML)}`);
 };
 
 // Show loading icon inside element identified by 'selector'.
