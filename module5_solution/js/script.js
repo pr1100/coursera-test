@@ -27,7 +27,6 @@ var menuItemHtml = "snippets/menu-item.html";
 var insertHtml = function (selector, html) {
   var targetElem = document.querySelector(selector);
   targetElem.innerHTML = html;
-  console.log(`Parshu 6 ${selector} ${html} ${JSON.stringify(targetElem.innerHTML)}`);
 };
 
 // Show loading icon inside element identified by 'selector'.
@@ -43,7 +42,6 @@ var insertProperty = function (string, propName, propValue) {
   var propToReplace = "{{" + propName + "}}";
   string = string
     .replace(new RegExp(propToReplace, "g"), propValue);
-    console.log(`Parshu 5 ${string} ${propName} ${propValue}`);
   return string;
 };
 
@@ -105,8 +103,6 @@ function buildAndShowHomeHTML (categories) {
       // variable's name implies it expects.
       // var chosenCategoryShortName = ....
       const random_category = chooseRandomCategory(categories);        
-      console.log(`Parshu 3 ${random_category}`);
-      console.log(`Parshu 3 ${random_category.short_name}`);
       // TODO: STEP 3: Substitute {{randomCategoryShortName}} in the home html snippet with the
       // chosen category from STEP 2. Use existing insertProperty function for that purpose.
       // Look through this code for an example of how to use the insertProperty function.
@@ -125,7 +121,6 @@ function buildAndShowHomeHTML (categories) {
       // Use the existing insertHtml function for that purpose. Look through this code for an example
       // of how to do that.
       // ....
-      console.log(`Parshu 2 ${homeHtmlToInsertIntoMainPage}`);
       insertHtml("#main-content", homeHtmlToInsertIntoMainPage);
 
     },
