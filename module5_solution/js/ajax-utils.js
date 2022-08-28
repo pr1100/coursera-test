@@ -23,7 +23,6 @@ function getRequestObject() {
 // Makes an Ajax GET request to 'requestUrl'
 ajaxUtils.sendGetRequest = 
   function(requestUrl, responseHandler, isJsonResponse) {
-    console.log(`Parshu1 ${requestUrl}`)
     var request = getRequestObject();
     request.onreadystatechange = 
       function() { 
