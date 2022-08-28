@@ -42,6 +42,7 @@ var insertProperty = function (string, propName, propValue) {
   var propToReplace = "{{" + propName + "}}";
   string = string
     .replace(new RegExp(propToReplace, "g"), propValue);
+    console.log(`Parshu 5 ${string} ${propName} ${propValue}`);
   return string;
 };
 
@@ -124,6 +125,7 @@ function buildAndShowHomeHTML (categories) {
       // of how to do that.
       // ....
       console.log(`Parshu 2 ${homeHtmlToInsertIntoMainPage}`);
+      console.log(`Parshu 2a ${homeHtml}`);
           insertHtml("#main-content", homeHtmlToInsertIntoMainPage);
     },
     false); // False here because we are getting just regular HTML from the server, so no need to process JSON.
